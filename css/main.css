@@ -36,7 +36,11 @@
 }
 
 .nav-list a {
-  font-size: 15.71px;
+  transition: color 0.2s ease-in;
+}
+
+.nav-list a:hover {
+  color: #FD2E24;
 }
 
 .nav-list img {
