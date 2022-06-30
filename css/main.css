@@ -65,8 +65,18 @@
 /* main */
 
 .main {
+  padding-top: 45px;
   width: 1100px;
   background-color: aqua;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 30px;
 }
 
 /* search */
@@ -95,4 +105,27 @@
 
 .search-input::placeholder {
   color: rgba(0, 0, 0, 0.2)
+}
+
+/* Nav header */
+
+.nav-header {
+
+}
+
+.nav-header-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-header-link-text + .nav-header-link-text {
+  margin-left: 42px;
+}
+
+.nav-header-link-text + .nav-header-link-icon {
+  margin-left: 50px;
+}
+
+.nav-header-link-icon + .nav-header-link-icon {
+  margin-left: 25px;
 }
