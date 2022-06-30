@@ -110,12 +110,44 @@
 /* Nav header */
 
 .nav-header {
-
+  font-size: 17px;
+  font-family: 'Circular Std';
 }
 
 .nav-header-list {
   display: flex;
   align-items: center;
+}
+
+.nav-header-link-text {
+  position: relative;
+}
+
+.nav-header-link-text::after {
+  position: absolute;
+  left: 0;
+  width: 0%;
+  bottom: -9px;
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.2s ease-in;
+}
+
+.nav-header-link-text:hover::after {
+  width: 100%;
+}
+
+.nav-header-link-text.active::after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: -9px;
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #000;
 }
 
 .nav-header-link-text + .nav-header-link-text {
